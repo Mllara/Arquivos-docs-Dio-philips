@@ -1,0 +1,112 @@
+Introdução ao Git
+
+
+para abrir o terminal do windows: window, digitar cmd, e clica a primeira pasta.
+
+1 comando dir: lista as pastas do windows
+2 para navegar entres as pastas subir, descer, ir para uma pasta específica
+cd / (/é o caminho específico, por exemplo: cd windows)
+mkdir : criar pasta-> se der tudo certo, nada vai acontecer
+ctlr + L= limpa = noi linux
+cls= limpa a tela no windows
+echo + alguma palavra = ele devolve a palavra que digitei
+echo+ alguma palavra > essa alguma palavra.txt
+Se Não existir u7ma pasta com essa palavra, ele cria
+rmdir + a pasta /s /q = para remover o supositório
+
+
+
+window
+linux
+1para listar e entender onde está:
+comando dir
+comando: ls
+2 change directory:cd
+cd
+cd windows
+cd etc
+mkdir
+
+
+
+
+
+
+
+
+
+
+
+
+
+Git: SHA - secure Hash Algorithm (algoritmo de Hash seguro) -  algoritmo de criptação. a encriptação gera um conjunto de 40 dígitos. 
+sha1 = é uma forma curta de representar um algoritmo
+
+Tipos de objetos:
+-BLOBS: contém metadados. Guarda apenas os caracteres do arquivo
+-TREES: armazem o blobs, contem metadados. Guarda o Blob, sha1 (os caracteres), e a estrutura onde estão os arquivos.
+-COMMITS: ele junta tudo. São dificeis de ser alterados= seguro.
+
+Chave SSH e Token
+ssh-keygen -t ed25519 -C marciallara@gmail.com
+
+está na pasta marci
+
+ls é para listar os arquivos: e vai aparecer as chaves oublicas e as privadas
+
+o comando cat para visulizar o conteudo da chave, que no caso é a publica.
+
+pwd mostra o caminho para ver a chave
+
+
+
+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
+
+Iniciando o GIT e criando um commit
+
+git init
+git add
+git commit
+todo comando do git e o comando especifico do git apos
+
+no meu disco C, há uma pasta workspace
+-direito do mouse-> git bash here e já abre o git no diretorio C
+-comando ls para listar que estão dentro do C
+-cd workspace para entrar na pasta workspace
+-ctrl L pra limpar tudo
+e dentro da pasta workspace, vou crir outra pasta: mkdir livro-receitas
+-ls
+-cd livro-receitas
+-git init: foi inicializado um repositorio vazio
+
+
+
+
+
+
+
+
+
+
+
+
+
+pasta git é oculta, ele direciona os objetos que direcionamos
+-ls -a: mostra arquivos ocultos
+
+markdown : forma mais humana de escrever um arquivo HTML
+
+Passo a passo no ciclo de vida GIt
+
+intracked = arquivos que não temos ciência
+tracked= conhecemos
+
+unmodified= sem modificação
+modified= modificado
+staged= é onde fica os arquivos que ficam os arquivos que ficam se preparando para fazer parte de outro agrupamento
+
+
+1-adiciona o arquivo untracked (git não tinha ciência dele) e da um git add-> removido para staging
+2-arquivo modificado e dá um git add-> staging
+o arquivo tbm move de staging quando vc commit
+
